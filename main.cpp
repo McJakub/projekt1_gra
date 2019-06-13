@@ -39,8 +39,11 @@ int main()
 
    Unit tank("tank", 10, 10, 1, 1, 1, 1);
    tank.setTexture(target_texture);
-   //tank.setPosition(32,32);
-    
+
+   Unit tank2("tank", 10, 10, 1, 2, 6, 5);
+   tank2.setTexture(target_texture);
+
+
 
 
     int x = window.getSize().x;
@@ -124,6 +127,7 @@ int main()
 
 
         tank.step(Target, current_player, event);
+        tank2.step(Target, current_player, event);
 
 
 
@@ -141,6 +145,7 @@ int main()
         window.draw(Target);
         window.draw(text);
         window.draw(tank);
+        window.draw(tank2);
 
 
 
