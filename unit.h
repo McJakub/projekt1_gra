@@ -10,11 +10,13 @@
 class Unit : public sf::Sprite
 {
 public:
-    Unit(std::string name="test", int hp = 10, int movement = 10, int firepower = 0, int player = 1, int position_x = 0, int position_y = 0);
+    Unit(std::string name="test", int hp = 10, int movement = 10, int firepower = 0, int player = 1, int actions = 2, int position_x = 0, int position_y = 0);
 
     void step(sf::Sprite target, int current_player, sf::Event event);
-
-
+    void Unit::select(sf::Sprite target, int current_player, sf::Event event, Unit selected_unit_1, Unit selected_unit_2);
+    void Unit::position(sf::Sprite target);
+    void Unit::setActions(int a);
+    int Unit::checkActions();
     // ~Unit();
      //std::string getName();
      //int getWalkSpeed();
@@ -26,6 +28,7 @@ public:
      int movement_;
      int firepower_;
      int player_;
+     int actions_;
      int position_x_;
      int position_y_;
      sf::Texture texture_;
