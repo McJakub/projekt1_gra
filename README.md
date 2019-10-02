@@ -3,6 +3,7 @@
 Czołgi poruszają się po kwardatach o wielkości 4 pola (4 w prawo, lewo na ukos). Czołg niszczy czołg przeciwnika gdy znajdzie się na tym samym polu. Jest możliwe umieszczenie więcej niż jednego czołgu na tym samym polu przez tego samego gracza.
 
 Kontrole:
+WASD poruszanie kursorem
 klawisz "1" poruszanie się czołgiem 1
 klawisz "2" poruszanie się czołgiem 2
 klawisz "3" poruszanie się czołgiem 3
